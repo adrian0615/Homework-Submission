@@ -6,20 +6,20 @@ var str = "Hello, playground"
 
 //: [Next](@next)
 
-
-func hasTeen(first: Int, second: Int, third: Int) -> Bool {
-    if first < 20 && first > 13 || second > 20 && second < 13 || third < 20 && third > 13  {
+func isTeen(x: Int) -> Bool {
+    if x < 20 && x > 12 {
         return true
     } else {
-        if second < 20 && second > 13 {
-            return true
-        } else {
-            if third < 20 && third > 13 {
-                return true
+      return false
+    }
+}
+
+func hasTeen(first: Int, second: Int, third: Int) -> Bool {
+    if isTeen(x: first) || isTeen(x: second) || isTeen(x: third)  {
+        return true
+    
             } else {
                 return false
-            }
-        }
     }
 }
 

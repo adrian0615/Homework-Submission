@@ -7,16 +7,10 @@ var str = "Hello, playground"
 //: [Next](@next)
 
 
+func sumDouble(first: Int, second: Int) -> Bool {
+    
+}
 
-var first = 0
-var second = 0
-
-func sumDouble () {
-    if first - second == 0 || second - first == 0 {
-        return (first + second)
-    } else {
-        return (first + second)
-    }
 }
 
 
